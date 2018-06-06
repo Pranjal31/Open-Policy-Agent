@@ -1,0 +1,35 @@
+{
+  "input": {
+      "method": "GET",
+      "uri": "/vnfs/{vnfId}/packages/tags",
+      "role": ["ROLE_PLANNER","ROLE_ADMIN"],
+      "lob": "VZW"
+  }
+}
+
+{
+  "input": {
+      "method": "POST",
+      "uri": "/roles",
+      "role": ["ROLE_USER"],
+      "lob": "VZW"
+  }
+}
+
+{
+  "input": {
+      "method": "POST",
+      "uri": "/vnfs/{vnfId}/packages/download-url",
+      "role": ["ROLE_USER"],
+      "lob": "VZW"
+  }
+}
+
+{
+  "input": {
+      "method": "GET",
+      "uri": "/activity/logs",
+      "role": ["ROLE_PLANNER","ROLE_ADMIN","ROLE_USER"],
+      "lob": "VZT"
+  }
+}

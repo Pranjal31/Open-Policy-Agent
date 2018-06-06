@@ -1,0 +1,82 @@
+{
+	"roles": [{
+			"role_id": "ROLE_ADMIN",
+			"role_name": "ADMIN",
+			"role_description": "This role indicates a ADMIN",
+			"features": [
+				"FEATURE_GET_ACTIVITY"
+			]
+		},
+		{
+			"role_id": "ROLE_PLANNER",
+			"role_name": "PLANNER",
+			"role_description": "This role indicates a PLANNER",
+			"features": [
+				"FEATURE_GET_ACTIVITY",
+				"FEATURE_GET_PACKAGE"
+			]
+		}, {
+			"role_id": "ROLE_USER",
+			"role_name": "USER",
+			"role_description": "This role indicates a USER",
+			"features": [
+
+				"FEATURE_POST_ROLES",
+				"FEATURE_GET_ACTIVITY"
+			]
+		}
+	],
+	"features": [{
+			"feature_id": "FEATURE_POST_ROLES",
+			"feature_name": "FEATURE_POST_ROLES",
+			"feature_descr": "This feature belongs to resource ROLES",
+			"services": ["CREATE_ROLE", "DOWNLOAD_PACKAGE"],
+			"lob": "VZW"
+		},
+		{
+			"feature_id": "FEATURE_GET_PACKAGE",
+			"feature_name": "FEATURE_GET_PACKAGE",
+			"feature_descr": "This feature belongs to resource PACKAGE",
+			"services": ["GET_ALL_PACKAGE_TAGS"],
+			"lob": "VZW"
+
+		}, {
+			"feature_id": "FEATURE_GET_ACTIVITY",
+			"feature_name": "FEATURE_GET_ACTIVITY",
+			"feature_descr": "This feature belongs to resource ACTIVITY",
+			"services": ["GET_ACTIVITY_LOGS"],
+			"lob": "VZT"
+
+		}
+	],
+	"services": [{
+		"service_id": "GET_ACTIVITY_LOGS",
+		"service_name": "GET_ACTIVITY_LOGS",
+		"service_descr": "GET /activity/logs",
+		"service_url": "/activity/logs",
+		"service_type": "GET",
+		"feature_id": "FEATURE_GET_ACTIVITY"
+	}, {
+		"service_id": "GET_ALL_PACKAGE_TAGS",
+		"service_name": "GET_ALL_PACKAGE_TAGS",
+		"service_descr": "GET /vnfs/{vnfId}/packages/tags",
+		"service_url": "/vnfs/{vnfId}/packages/tags",
+		"service_type": "GET",
+		"feature_id": "FEATURE_GET_PACKAGE"
+	}, {
+		"service_id": "CREATE_ROLE",
+		"service_name": "CREATE_ROLE",
+		"service_descr": "POST /roles",
+		"service_url": "/roles",
+		"service_type": "POST",
+		"feature_id": "FEATURE_POST_ROLES"
+	}, {
+		"service_id": "DOWNLOAD_PACKAGE",
+		"service_name": "DOWNLOAD_PACKAGE",
+		"service_descr": "POST /vnfs/{vnfId}/packages/download-url",
+		"service_url": "/vnfs/{vnfId}/packages/download-url",
+		"service_type": "POST",
+		"feature_id": "FEATURE_POST_ROLES"
+	}]
+
+}
