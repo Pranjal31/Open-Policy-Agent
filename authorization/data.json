@@ -31,21 +31,21 @@
 			"feature_name": "FEATURE_POST_ROLES",
 			"feature_descr": "This feature belongs to resource ROLES",
 			"services": ["CREATE_ROLE", "DOWNLOAD_PACKAGE"],
-			"lob": "VZW"
+			"lob": "A"
 		},
 		{
 			"feature_id": "FEATURE_GET_PACKAGE",
 			"feature_name": "FEATURE_GET_PACKAGE",
 			"feature_descr": "This feature belongs to resource PACKAGE",
 			"services": ["GET_ALL_PACKAGE_TAGS"],
-			"lob": "VZW"
+			"lob": "A"
 
 		}, {
 			"feature_id": "FEATURE_GET_ACTIVITY",
 			"feature_name": "FEATURE_GET_ACTIVITY",
 			"feature_descr": "This feature belongs to resource ACTIVITY",
 			"services": ["GET_ACTIVITY_LOGS"],
-			"lob": "VZT"
+			"lob": "B"
 
 		}
 	],
