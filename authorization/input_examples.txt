@@ -3,7 +3,7 @@
       "method": "GET",
       "uri": "/vnfs/{vnfId}/packages/tags",
       "role": ["ROLE_PLANNER","ROLE_ADMIN"],
-      "lob": "VZW"
+      "lob": "A"
   }
 }
 
@@ -12,7 +12,7 @@
       "method": "POST",
       "uri": "/roles",
       "role": ["ROLE_USER"],
-      "lob": "VZW"
+      "lob": "A"
   }
 }
 
@@ -21,7 +21,7 @@
       "method": "POST",
       "uri": "/vnfs/{vnfId}/packages/download-url",
       "role": ["ROLE_USER"],
-      "lob": "VZW"
+      "lob": "A"
   }
 }
 
@@ -30,6 +30,6 @@
       "method": "GET",
       "uri": "/activity/logs",
       "role": ["ROLE_PLANNER","ROLE_ADMIN","ROLE_USER"],
-      "lob": "VZT"
+      "lob": "B"
   }
 }
